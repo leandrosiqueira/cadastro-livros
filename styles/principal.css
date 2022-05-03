@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-principal: #0a86f9;
+  --cor-secundaria: #90835d;
+  --cor-destaque-livros: #e6e6e6;
+  --cor-sombra: #CCC;
+  --cor-texto: #FFF;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+header {
+  background-color: var(--cor-principal);
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  box-shadow: 0 1px 2px var(--cor-sombra);
+}
+
+.titulo-cabecalho {
+  color: rgb(244, 228, 228);
+  font-size: 2.5rem; 
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: 5vh auto;
+  padding: 50px;
+  box-shadow: 2px 2px 10px var(--cor-sombra);
+  gap: 20px;
+} 
+
+@media (max-width:480px) {
+  header {
+    position: fixed;
+    width: 100%;
+  } 
+
+  main {
+    padding: 0;
+    margin: 20px 0 0 0;
+    width: 100%;
+    box-shadow: none;
+  }
+}
