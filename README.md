@@ -4,4 +4,5 @@ Aplicação para cadastro de livros.
 
 ![alt text](assets/snapshot-cadastro-livros.png)
 
-https://leandrosiqueira-contador.netlify.app/
+https://leandrosiqueira-cadastro-livros.netlify.app
+
